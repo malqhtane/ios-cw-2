@@ -21,7 +21,28 @@ class ViewController: UIViewController {
         
         
         // MARK: - اكتب ال if statement الكود تحت
-        
+        if animal == "mouse"
+        {
+            emojiArray.append("🐭")
+        }
+        else if animal == "koale"
+        {
+            emojiArray.append("🐨")
+        }
+        else if animal == "duck"
+        {
+            emojiArray.append("🦆")
+            
+        }
+        else if animal == "whale"
+               {
+                   emojiArray.append("🐳")
+                   
+               }
+        else
+        {
+            emojiArray.append("❓")
+        }
         
         // MARK: - لا تقم بتغيير هذا السطر⚠️⚠️
         animalTextField.text = ""
@@ -38,7 +59,7 @@ class ViewController: UIViewController {
             animalEmojiLabel.text! += label
         }
         /// **BONUS**: 🎁 قم بمسح مكونات المصفوفة بعد عرضها
-
+        emojiArray.removeAll()
     }
 }
 
